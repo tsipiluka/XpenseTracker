@@ -47,7 +47,8 @@ body{
     height: 100vh;
     font-family: poppins, sans-serif;
     font-size: 0.88rem;
-    background: var(--color-background, #505051);
+    background-color: var(--color-background, #505051);
+    background: green;
     user-select: none;
     overflow-x: hidden;
     color: var(--color-dark, #363949);
@@ -228,7 +229,7 @@ aside .sidebar .message-count {
 
 /*------------INSIGHTS-------------*/
 main {
-    margin-top: 1.4rem;
+    margin-top: 5rem;
 }
 
 main .date {
@@ -343,7 +344,7 @@ main .insights small {
 
 /*-------------RECENT ORDERS-------------*/
 main .recent-orders {
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
 
 main .recent-orders h2 {
@@ -351,7 +352,7 @@ main .recent-orders h2 {
 }
 
 main .recent-orders table {
-    background: --color-white, #fff;
+    background: var(--color-white, #fff);
     width: 100%;
     border-radius: var(--card-border-radius, 2rem);
     padding: var(--card-padding, 1.8rem);
