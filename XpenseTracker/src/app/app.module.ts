@@ -8,11 +8,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgbProgressbarModule } from '@ng-bootstrap/ng-bootstrap';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
-
+import { IncomeComponent } from './income/income.component';
+import {MatButtonModule} from '@angular/material/button';
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardComponent
+    DashboardComponent,
+    IncomeComponent
   ],
   imports: [
     BrowserModule,
@@ -20,9 +22,10 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
     BrowserAnimationsModule,
     NgbProgressbarModule,
     NgbModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    MatButtonModule
   ],
   providers: [],
-  bootstrap: [AppComponent, DashboardComponent]
+  bootstrap: [AppComponent, DashboardComponent, IncomeComponent]
 })
 export class AppModule { }
