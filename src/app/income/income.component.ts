@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {NgbDateStruct} from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-income',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./income.component.css']
 })
 export class IncomeComponent implements OnInit {
+  model: NgbDateStruct | undefined;
 
   constructor() { }
 

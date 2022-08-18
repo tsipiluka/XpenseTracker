@@ -10,6 +10,8 @@ import { NgbProgressbarModule } from '@ng-bootstrap/ng-bootstrap';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { IncomeComponent } from './income/income.component';
 import {MatButtonModule} from '@angular/material/button';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +25,7 @@ import {MatButtonModule} from '@angular/material/button';
     NgbProgressbarModule,
     NgbModule,
     MatProgressBarModule,
-    MatButtonModule
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent, DashboardComponent, IncomeComponent]
