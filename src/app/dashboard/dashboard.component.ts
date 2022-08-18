@@ -7,14 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
-  constructor() { }
 
-  ngOnInit(): void {
+  constructor() {
+
   }
+
+  ngOnInit(): void {  }
 
   myhref(url: string): void {
     const test = "localhost:4200" + url;
     window.location.href = "http://localhost:4200" + url;
     console.log(test);
   }
+
 }
