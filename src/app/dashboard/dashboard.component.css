@@ -370,6 +370,10 @@ main .recent-orders table {
     color: var(--color-dark-variant, #677483);
  }
 
+ main table tbody td .progress{
+    margin: 0 1rem 0 1rem;
+ }
+
  main table tbody tr:last-child td {
     border: none;
  }
