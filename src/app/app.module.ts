@@ -11,6 +11,7 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { IncomeComponent } from './income/income.component';
 import {MatButtonModule} from '@angular/material/button';
 import { ExpensesComponent } from './expenses/expenses.component';
+import { CategoriesComponent } from './categories/categories.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { ExpensesComponent } from './expenses/expenses.component';
     AppComponent,
     DashboardComponent,
     IncomeComponent,
-    ExpensesComponent
+    ExpensesComponent,
+    CategoriesComponent
   ],
   imports: [
     BrowserModule,
