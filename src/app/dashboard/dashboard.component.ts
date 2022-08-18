@@ -12,4 +12,9 @@ export class DashboardComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  myhref(url: string): void {
+    const test = "localhost:4200" + url;
+    window.location.href = "http://localhost:4200" + url;
+    console.log(test);
+  }
 }
