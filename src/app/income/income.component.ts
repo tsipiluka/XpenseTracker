@@ -7,7 +7,6 @@ import {NgbDateStruct} from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./income.component.css']
 })
 export class IncomeComponent implements OnInit {
-  model: NgbDateStruct | undefined;
 
   constructor() { }
 

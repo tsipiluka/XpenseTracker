@@ -10,13 +10,15 @@ import { NgbProgressbarModule } from '@ng-bootstrap/ng-bootstrap';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { IncomeComponent } from './income/income.component';
 import {MatButtonModule} from '@angular/material/button';
+import { ExpensesComponent } from './expenses/expenses.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
-    IncomeComponent
+    IncomeComponent,
+    ExpensesComponent
   ],
   imports: [
     BrowserModule,

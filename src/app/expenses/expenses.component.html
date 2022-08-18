@@ -18,11 +18,11 @@
                 <span class="material-icons-outlined">grid_view</span>
                 <h3>Dashboard</h3>
             </a>
-            <a href="income" class="active">
+            <a href="income">
                 <span class="material-icons-outlined">analytics</span>
                 <h3>Income</h3>
             </a>
-            <a href="expenses">
+            <a href="expenses" class="active">
                 <span class="material-icons-outlined">bar_chart</span>
                 <h3>Expenses</h3>
             </a>
@@ -57,7 +57,7 @@
     <!--END OF SIDEBAR-->
     <!--BEGIN OF DASHBOARD-->
     <main>
-        <h1>Income</h1>
+        <h1>Expenses</h1>
 
     <!--BEGIN OF RECENT ORDERS TABLE-->
     <div class="recent-orders">
@@ -247,7 +247,7 @@
                         </span>   
                     </div>
                     <div class="message">
-                        <p> Add New Income:</p>
+                        <p> Add New Expense:</p>
                     </div>
                 </div>
                 <div class="update">
@@ -255,16 +255,22 @@
 
                     </div>
                     <div class="message">
-                        <input class="first" type="text" placeholder="  Value">
+                        <input class="first" type="text" placeholder="  Value"> 
                         <input class="value" type="text" placeholder="  Subject">
                         <input class="date" type="date">
+                        <select name="categories" id="categories">
+                            <option value="" disabled selected hidden>Select Category</option>
+                            <option value="Clothes">Clothes</option>
+                            <option value="Food">Food</option>
+                            <option value="Rent">Rent</option>
+                        </select>
                     </div>
                 </div>
                 <div class="update">
                     <div class="profile-photo">
                     </div>
                     <div class="message">
-                        <button mat-raised-button>Add New Income</button>
+                        <button mat-raised-button>Add New Expense</button>
                     </div>
                 </div>
             </div>
