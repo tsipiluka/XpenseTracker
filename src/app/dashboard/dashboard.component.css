@@ -534,3 +534,49 @@ main .recent-orders table {
 .right .sales-analytics .add-product div h3 {
     font-weight: 600;
 }
+
+.right .add .first {
+    background-color: transparent;
+    border: 2px dashed var(--color-primary, #7380ec);
+    border-radius: 1.2rem;
+    color: var(--color-primary, #7380ec);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    width: 48%;
+    height: 70px;
+    box-shadow: var(--box-shadow, 0 2rem 3rem var(--color-light, rgba(132, 139, 200, 0.18)));
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 0.9rem;
+    margin-right: 4%;
+}
+
+.right .add .first:hover {
+    box-shadow: none;
+}
+
+.right .add .second {
+    background-color: transparent;
+    border: 2px dashed var(--color-primary, #7380ec);
+    border-radius: 1.2rem;
+    color: var(--color-primary, #7380ec);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48%;
+    height: 70px;
+    box-shadow: var(--box-shadow, 0 2rem 3rem var(--color-light, rgba(132, 139, 200, 0.18)));
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.right .add .second:hover {
+    box-shadow: none;
+}
+
+.right .add span {
+    margin-right: 0.5rem;
+}
