@@ -171,7 +171,7 @@ main {
 
  .right .top {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     gap: 2rem;
  }
 
@@ -283,7 +283,7 @@ main .sales-analytics .item:hover {
 main .sales-analytics .item .right {
     display: flex;
     justify-content: space-between;
-    align-items: start;
+    align-items: flex-start;
     margin: 0;
     width: 100%;
 }
