@@ -1,0 +1,20 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet">
+<aside>
+    <div class="top">
+        <div class="logo">
+            <img src="../assets/images/xpense_tracker_logo.png" alt="">
+        </div>
+        <div class="close" id="close-btn">
+            <span class="material-icons-outlined" id="dashboard_label">close</span>
+        </div>
+    </div>
+
+<div class="sidebar" >
+    <a href={{card.href}} [ngClass]="window.includes(card.href) ? 'active' : ''  " *ngFor="let card of cards">
+        <span class="material-icons-outlined">{{card.icon}}</span>
+        <h3>{{card.title}}</h3>
+    </a>
+</div>
+    <!--ADD NEW SIDEBAR COMPONENTS HERE-->
+</aside>

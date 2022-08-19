@@ -17,6 +17,7 @@ export class DashboardComponent implements OnInit {
   myhref(url: string): void {
     const test = "localhost:4200" + url;
     window.location.href = "http://localhost:4200" + url;
+
     console.log(test);
   }
 
