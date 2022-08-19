@@ -1,5 +1,7 @@
 
+
 /* ---------------- SIDE-BAR ---------------*/
+
 aside .sidebar {
     background: #fff;
     display: flex;
@@ -68,3 +70,4 @@ aside .sidebar .message-count {
     font-size: 1rem;
     border-radius: var(--border-radius-1, 0.5rem);
 }
+
