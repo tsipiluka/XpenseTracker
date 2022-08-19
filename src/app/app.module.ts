@@ -12,6 +12,7 @@ import { IncomeComponent } from './income/income.component';
 import {MatButtonModule} from '@angular/material/button';
 import { ExpensesComponent } from './expenses/expenses.component';
 import { CategoriesComponent } from './categories/categories.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { CategoriesComponent } from './categories/categories.component';
     DashboardComponent,
     IncomeComponent,
     ExpensesComponent,
-    CategoriesComponent
+    CategoriesComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
