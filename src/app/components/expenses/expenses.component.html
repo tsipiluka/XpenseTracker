@@ -3,62 +3,12 @@
 
 <div class="container">
     <!--BEGIN OF SIDEBAR-->
-    <aside>
-        <div class="top">
-            <div class="logo">
-                <img src="../assets/images/xpense_tracker_logo.png" alt="">
-            </div>
-            <div class="close" id="close-btn">
-                <span class="material-icons-outlined">close</span>
-            </div>
-        </div>
-
-        <div class="sidebar">
-            <a href="dashboard">
-                <span class="material-icons-outlined">grid_view</span>
-                <h3>Dashboard</h3>
-            </a>
-            <a href="income" class="active">
-                <span class="material-icons-outlined">savings</span>
-                <h3>Income</h3>
-            </a>
-            <a href="expenses">
-                <span class="material-icons-outlined">payments</span>
-                <h3>Expenses</h3>
-            </a>
-            <a href="#">
-                <span class="material-icons-outlined">insights</span>
-                <h3>Analytics</h3>
-            </a>
-            <a href="#">
-                <span class="material-icons-outlined">query_stats</span>
-                <h3>Shares</h3>
-            </a>
-            <a href="categories">
-                <span class="material-icons-outlined">sell</span>
-                <h3>Categories</h3>
-            </a>
-            <a href="#">
-                <span class="material-icons-outlined">newspaper</span>
-                <h3>News</h3>
-            </a>
-            <a href="#">
-                <span class="material-icons-outlined">settings</span>
-                <h3>Settings</h3>
-            </a>
-            <a href="#">
-                <span class="material-icons-outlined">logout</span>
-                <h3>Logout</h3>
-            </a>
-            <!--ADD NEW SIDEBAR COMPONENTS HERE-->
-        </div>
-    </aside>
+    <app-sidebar></app-sidebar>
     <!--END OF SIDEBAR-->
     <!--BEGIN OF DASHBOARD-->
     <main>
-        <h1>Income</h1>
-
-        <!--BEGIN OF INCOME LIST-->
+        <h1>Expenses</h1>
+                    <!--BEGIN OF EXPENSE LIST-->
         <div class="sales-analytics">
             <div class="item online">
                 <div class="icon">
@@ -68,13 +18,14 @@
                 </div>
                 <div class="right">
                     <div class="info">
-                        <h3>SALARY</h3>
+                        <h3>Cigarettes</h3>
+                        <small class="text-muted">08.08.2022</small>
                     </div>
                     <div class="incomedate">
-                        <h3>16.08.2022</h3>
+                        <h3>PERSONAL</h3>
                     </div>
                     <div class="plus">
-                        <h3 class="success">+3.900€</h3>
+                        <h3 class="danger">-3.900€</h3>
                     </div>
                 </div>
             </div>
@@ -86,13 +37,14 @@
                 </div>
                 <div class="right">
                     <div class="info">
-                        <h3>POCKET MONEY</h3>
+                        <h3>ONLYFANS</h3>
+                        <small class="text-muted">08.08.2022</small>
                     </div>
                     <div class="incomedate">
-                        <h3>16.08.2022</h3>
+                        <h3>PERSONAL</h3>
                     </div>
                     <div class="plus">
-                        <h3 class="success">+90€</h3>
+                        <h3 class="danger">-90€</h3>
                     </div>
                 </div>
             </div>
@@ -105,12 +57,13 @@
                 <div class="right">
                     <div class="info">
                         <h3>GIFT</h3>
+                        <small class="text-muted">08.08.2022</small>
                     </div>
                     <div class="incomedate">
-                        <h3>15.08.2022</h3>
+                        <h3>PERSONAL</h3>
                     </div>
                     <div class="plus">
-                        <h3 class="success">+25€</h3>
+                        <h3 class="danger">-25€</h3>
                     </div>
                 </div>
             </div>
@@ -122,13 +75,14 @@
                 </div>
                 <div class="right">
                     <div class="info">
-                        <h3>THANKS!</h3>
+                        <h3>DEBTS</h3>
+                        <small class="text-muted">08.08.2022</small>
                     </div>
                     <div class="incomedate">
-                        <h3>12.08.2022</h3>
+                        <h3>DEBTS</h3>
                     </div>
                     <div class="plus">
-                        <h3 class="success">+20€</h3>
+                        <h3 class="danger">-20€</h3>
                     </div>
                 </div>
             </div>
@@ -140,13 +94,14 @@
                 </div>
                 <div class="right">
                     <div class="info">
-                        <h3>DONATION</h3>
+                        <h3>RENT</h3>
+                        <small class="text-muted">08.08.2022</small>
                     </div>
                     <div class="incomedate">
-                        <h3>10.08.2022</h3>
+                        <h3>GENERAL</h3>
                     </div>
                     <div class="plus">
-                        <h3 class="success">+1000€</h3>
+                        <h3 class="danger">-1000€</h3>
                     </div>
                 </div>
             </div>
@@ -158,13 +113,14 @@
                 </div>
                 <div class="right">
                     <div class="info">
-                        <h3>PAYPAL</h3>
+                        <h3>PIZZA</h3>
+                        <small class="text-muted">08.08.2022</small>
                     </div>
                     <div class="incomedate">
-                        <h3>08.08.2022</h3>
+                        <h3>FOOD</h3>
                     </div>
                     <div class="plus">
-                        <h3 class="success">+9€</h3>
+                        <h3 class="danger">-9€</h3>
                     </div>
                 </div>
             </div>
@@ -174,8 +130,8 @@
                 Load More
             </div>
         </div>
-        <!--END OF INCOME LIST-->
-    
+        <!--END OF EXPENSE LIST-->
+
     </main>
     <!--END OF MAIN-->
     <div class="right">
@@ -213,7 +169,7 @@
                         </span>   
                     </div>
                     <div class="message">
-                        <p> Add New Income:</p>
+                        <p> Add New Expense:</p>
                     </div>
                 </div>
                 <div class="update">
@@ -221,16 +177,22 @@
 
                     </div>
                     <div class="message">
-                        <input class="first" type="text" placeholder="  Value">
+                        <input class="first" type="text" placeholder="  Value"> 
                         <input class="value" type="text" placeholder="  Subject">
                         <input class="date" type="date">
+                        <select name="categories" id="categories">
+                            <option value="" disabled selected hidden>Select Category</option>
+                            <option value="Clothes">Clothes</option>
+                            <option value="Food">Food</option>
+                            <option value="Rent">Rent</option>
+                        </select>
                     </div>
                 </div>
                 <div class="update">
                     <div class="profile-photo">
                     </div>
                     <div class="message">
-                        <button mat-raised-button>Add New Income</button>
+                        <button mat-raised-button>Add New Expense</button>
                     </div>
                 </div>
             </div>

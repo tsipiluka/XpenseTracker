@@ -3,62 +3,13 @@
 
 <div class="container">
     <!--BEGIN OF SIDEBAR-->
-    <aside>
-        <div class="top">
-            <div class="logo">
-                <img src="../assets/images/xpense_tracker_logo.png" alt="">
-            </div>
-            <div class="close" id="close-btn">
-                <span class="material-icons-outlined">close</span>
-            </div>
-        </div>
-
-        <div class="sidebar">
-            <a href="dashboard">
-                <span class="material-icons-outlined">grid_view</span>
-                <h3>Dashboard</h3>
-            </a>
-            <a href="income">
-                <span class="material-icons-outlined">savings</span>
-                <h3>Income</h3>
-            </a>
-            <a href="expenses">
-                <span class="material-icons-outlined">payments</span>
-                <h3>Expenses</h3>
-            </a>
-            <a href="#">
-                <span class="material-icons-outlined">insights</span>
-                <h3>Analytics</h3>
-            </a>
-            <a href="#">
-                <span class="material-icons-outlined">query_stats</span>
-                <h3>Shares</h3>
-            </a>
-            <a href="categories" class="active">
-                <span class="material-icons-outlined">sell</span>
-                <h3>Categories</h3>
-            </a>
-            <a href="categories">
-                <span class="material-icons-outlined">newspaper</span>
-                <h3>News</h3>
-            </a>
-            <a href="#">
-                <span class="material-icons-outlined">settings</span>
-                <h3>Settings</h3>
-            </a>
-            <a href="#">
-                <span class="material-icons-outlined">logout</span>
-                <h3>Logout</h3>
-            </a>
-            <!--ADD NEW SIDEBAR COMPONENTS HERE-->
-        </div>
-    </aside>
+    <app-sidebar></app-sidebar>
     <!--END OF SIDEBAR-->
     <!--BEGIN OF DASHBOARD-->
     <main>
-        <h1>Categories</h1>
+        <h1>Income</h1>
 
-    <!--BEGIN OF CATEGORY LIST-->
+        <!--BEGIN OF INCOME LIST-->
         <div class="sales-analytics">
             <div class="item online">
                 <div class="icon">
@@ -68,14 +19,13 @@
                 </div>
                 <div class="right">
                     <div class="info">
-                        <h3>FOOD</h3>
-                        <small class="text-muted">Limit: 400€</small>
+                        <h3>SALARY</h3>
                     </div>
-                    <div class="limitnumber">
-                        <h3>300€</h3>
+                    <div class="incomedate">
+                        <h3>16.08.2022</h3>
                     </div>
-                    <div class="limit">
-                        <p><ngb-progressbar [showValue]="true" [value]="75" class="orangebar"></ngb-progressbar></p> 
+                    <div class="plus">
+                        <h3 class="success">+3.900€</h3>
                     </div>
                 </div>
             </div>
@@ -87,14 +37,13 @@
                 </div>
                 <div class="right">
                     <div class="info">
-                        <h3>CLOTHES</h3>
-                        <small class="text-muted">Limit: 150€</small>
+                        <h3>POCKET MONEY</h3>
                     </div>
-                    <div class="limitnumber">
-                        <h3>30€</h3>
+                    <div class="incomedate">
+                        <h3>16.08.2022</h3>
                     </div>
-                    <div class="limit">
-                        <p><ngb-progressbar [showValue]="true" type="success" [value]="20"></ngb-progressbar></p> 
+                    <div class="plus">
+                        <h3 class="success">+90€</h3>
                     </div>
                 </div>
             </div>
@@ -106,24 +55,78 @@
                 </div>
                 <div class="right">
                     <div class="info">
-                        <h3>GIFTS</h3>
-                        <small class="text-muted">Limit: 100€</small>
+                        <h3>GIFT</h3>
                     </div>
-                    <div class="limitnumber">
-                        <h3>100€</h3>
+                    <div class="incomedate">
+                        <h3>15.08.2022</h3>
                     </div>
-                    <div class="limit">
-                        <p><ngb-progressbar [showValue]="true" type="danger" [value]="150"></ngb-progressbar></p> 
+                    <div class="plus">
+                        <h3 class="success">+25€</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="item offline">
+                <div class="icon">
+                    <span class="material-icons-outlined">
+                        local_mall
+                    </span>                            
+                </div>
+                <div class="right">
+                    <div class="info">
+                        <h3>THANKS!</h3>
+                    </div>
+                    <div class="incomedate">
+                        <h3>12.08.2022</h3>
+                    </div>
+                    <div class="plus">
+                        <h3 class="success">+20€</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="item offline">
+                <div class="icon">
+                    <span class="material-icons-outlined">
+                        local_mall
+                    </span>                            
+                </div>
+                <div class="right">
+                    <div class="info">
+                        <h3>DONATION</h3>
+                    </div>
+                    <div class="incomedate">
+                        <h3>10.08.2022</h3>
+                    </div>
+                    <div class="plus">
+                        <h3 class="success">+1000€</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="item offline">
+                <div class="icon">
+                    <span class="material-icons-outlined">
+                        local_mall
+                    </span>                            
+                </div>
+                <div class="right">
+                    <div class="info">
+                        <h3>PAYPAL</h3>
+                    </div>
+                    <div class="incomedate">
+                        <h3>08.08.2022</h3>
+                    </div>
+                    <div class="plus">
+                        <h3 class="success">+9€</h3>
                     </div>
                 </div>
             </div>
         </div>
         <div class="add">
             <div class="first">
-                Add New Category
+                Load More
             </div>
         </div>
-        <!--END OF CATEGORY LIST-->
+        <!--END OF INCOME LIST-->
+    
     </main>
     <!--END OF MAIN-->
     <div class="right">
