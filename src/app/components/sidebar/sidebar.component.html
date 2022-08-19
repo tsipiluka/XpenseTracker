@@ -9,6 +9,7 @@
         <div class="close" id="close-btn">
             <span class="material-icons-outlined" id="dashboard_label">close</span>
         </div>
+    </div>
 
     <div class="sidebar" >
         <a href={{card.href}} [ngClass]="window.includes(card.href) ? 'active' : ''  " *ngFor="let card of cards">
