@@ -156,10 +156,9 @@ aside .close {
     display: none;
 }
 
-
 /*------------INSIGHTS-------------*/
 main {
-    margin-top: 5rem;
+    /* margin-top: 5rem; */
 }
 
 main .date {
@@ -272,6 +271,7 @@ main .insights small {
     margin-top: 1.3rem;
     display: block;
 }
+
 
 /*-------------RECENT ORDERS-------------*/
 main .recent-orders {
