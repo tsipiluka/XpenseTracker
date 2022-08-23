@@ -1,0 +1,111 @@
+
+/*-------------EXPENSE LIST-------------*/
+
+
+.info {
+    width: 33%;
+    margin-top: 0.5rem;
+}
+
+ .plus {
+    margin-top: auto;
+    width: 16%;
+    margin-top: 10px;
+}
+
+ .incomedate {
+    color: gray;
+    width: 50%;
+    margin-left: 15%;
+    margin-top: 10px;
+}
+
+h2 {
+    margin-top: 0.8rem;
+}
+
+ .item {
+    background-color: var(--color-white, #fff);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.7rem;
+    padding: 1.4rem var(--card-padding, 1.8rem);
+    border-radius: var(--border-radius-3, 1.2rem);
+    box-shadow: var(--box-shadow, 0 2rem 3rem var(--color-light, rgba(132, 139, 200, 0.18)));
+    transition: all 300ms ease;
+    cursor: pointer;
+}
+
+ .item:hover {
+    box-shadow: none;
+}
+
+.item .right {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin: 0;
+    width: 100%;
+}
+
+.item .icon {
+    padding: 0.6rem;
+    color: var(--color-white, #fff);
+    border-radius: 50%;
+    background: var(--color-primary, #7380ec);
+    display: flex;
+}
+
+.item.offline .icon {
+    background: var(--color-danger, #ff7782);
+}
+
+.item.customers .icon {
+    background: var(--color-succes, #41f1b6);
+}
+
+.add-product {
+    background-color: transparent;
+    border: 2px dashed var(--color-primary, #7380ec);
+    color: var(--color-primary, #7380ec);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-product div {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.add-product div h3 {
+    font-weight: 600;
+}
+
+ .add .first {
+    background-color: transparent;
+    border: 2px dashed var(--color-primary, #7380ec);
+    border-radius: 1.2rem;
+    color: var(--color-primary, #7380ec);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    width: 100%;
+    height: 80px;
+    box-shadow: var(--box-shadow, 0 2rem 3rem var(--color-light, rgba(132, 139, 200, 0.18)));
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+ .add .first:hover {
+    box-shadow: none;
+}
+
+
+ .add span {
+    margin-right: 0.5rem;
+}

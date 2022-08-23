@@ -14,6 +14,8 @@ import { ExpensesComponent } from './components/expenses/expenses.component';
 import { CategoriesComponent } from './components/categories/categories.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { InsightsComponent } from './components/insights/insights.component';
+import { StretchcardsComponent } from './components/stretchcards/stretchcards.component';
+import { ProgressCardComponent } from './components/progress-card/progress-card.component';
 
 
 @NgModule({
@@ -25,6 +27,8 @@ import { InsightsComponent } from './components/insights/insights.component';
     ExpensesComponent,
     CategoriesComponent,
     SidebarComponent,
+    StretchcardsComponent,
+    ProgressCardComponent,
   ],
   imports: [
     BrowserModule,

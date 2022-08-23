@@ -7,9 +7,56 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExpensesComponent implements OnInit {
 
-  constructor() { }
+  stretchCards: any[] = [];
+
+  constructor(
+    
+  ) { }
 
   ngOnInit(): void {
+    this.stretchCards = [
+      {
+        title: 'Cigarettes',
+        class: 'item online',
+        icon: 'shopping_cart',
+        smallText: '08.08.2022',
+        reason: 'PERSONAL',
+        amount: '-14'
+      },
+      {
+        title: 'Cigarettes',
+        class: 'item offline',
+        icon: 'shopping_cart',
+        smallText: '08.08.2022',
+        reason: 'PERSONAL',
+        amount: '-14'
+      },
+      {
+        title: 'Cigarettes',
+        class: 'item online',
+        icon: 'shopping_cart',
+        smallText: '08.08.2022',
+        reason: 'PERSONAL',
+        amount: '-14'
+      },
+      {
+        title: 'Cigarettes',
+        class: 'item offline',
+        icon: 'shopping_cart',
+        smallText: '08.08.2022',
+        reason: 'PERSONAL',
+        amount: '-14'
+      },
+      {
+        title: 'Cigarettes',
+        class: 'item online',
+        icon: 'shopping_cart',
+        smallText: '08.08.2022',
+        reason: 'PERSONAL',
+        amount: '-14'
+      },
+      
+    ]
   }
 
 }

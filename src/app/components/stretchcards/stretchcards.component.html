@@ -1,0 +1,25 @@
+
+    <div class="{{stretchCard.class}}" *ngFor="let stretchCard of stretchCards">
+        <div class="icon">
+            <span class="material-icons-outlined">
+                {{stretchCard.icon}}
+            </span>                            
+        </div>
+        <div class="right">
+            <div class="info">
+                <h3>{{stretchCard.title}}</h3>
+                <small class="text-muted">{{stretchCard.smallText}}</small>
+            </div>
+            <div class="incomedate">
+                <h3>{{stretchCard.reason}}</h3>
+            </div>
+            <div class="plus">
+                <h3 [ngClass]="stretchCard.amount > 0 ? 'success' : 'danger'">{{stretchCard.amount | currency: 'EUR'}}</h3>
+            </div>
+        </div>
+    </div>
+    <div class="add">
+        <div class="first">
+            Load More
+        </div>
+    </div>
