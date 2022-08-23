@@ -1,0 +1,24 @@
+<div class="{{progressCard.class}}" *ngFor="let progressCard of progressCards ">
+    <div class="icon">
+        <span class="material-icons-outlined">
+          {{progressCard.icon}}
+        </span>                            
+    </div>
+    <div class="right">
+        <div class="info">
+            <h3>{{progressCard.title}}</h3>
+            <small class="text-muted">{{progressCard.limit}}</small>
+        </div>
+        <div class="limitnumber">
+            <h3>{{progressCard.currentAmount}}</h3>
+        </div>
+        <div class="limit">
+            <p><ngb-progressbar [showValue]="true" [value]="progressCard.currentAmount / progressCard.limit * 100" class="{{progressCard.progressBarClass}}"></ngb-progressbar></p> 
+        </div>
+    </div>
+</div>
+<div class="add">
+    <div class="first">
+        Add New Category
+    </div>
+</div>

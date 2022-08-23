@@ -15,6 +15,7 @@ import { CategoriesComponent } from './components/categories/categories.componen
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { InsightsComponent } from './components/insights/insights.component';
 import { StretchcardsComponent } from './components/stretchcards/stretchcards.component';
+import { ProgressCardComponent } from './components/progress-card/progress-card.component';
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import { StretchcardsComponent } from './components/stretchcards/stretchcards.co
     CategoriesComponent,
     SidebarComponent,
     StretchcardsComponent,
+    ProgressCardComponent,
   ],
   imports: [
     BrowserModule,
