@@ -17,6 +17,7 @@ import { InsightsComponent } from './components/insights/insights.component';
 import { StretchcardsComponent } from './components/stretchcards/stretchcards.component';
 import { ProgressCardComponent } from './components/progress-card/progress-card.component';
 import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
 
 
 @NgModule({
@@ -31,6 +32,7 @@ import { LoginComponent } from './components/login/login.component';
     StretchcardsComponent,
     ProgressCardComponent,
     LoginComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,
