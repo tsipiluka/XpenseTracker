@@ -16,6 +16,8 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { InsightsComponent } from './components/insights/insights.component';
 import { StretchcardsComponent } from './components/stretchcards/stretchcards.component';
 import { ProgressCardComponent } from './components/progress-card/progress-card.component';
+import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
 
 
 @NgModule({
@@ -29,6 +31,8 @@ import { ProgressCardComponent } from './components/progress-card/progress-card.
     SidebarComponent,
     StretchcardsComponent,
     ProgressCardComponent,
+    LoginComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,
